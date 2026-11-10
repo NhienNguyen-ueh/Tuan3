@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu-nganh {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0; 
+}
+
+.menu-nganh li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.menu-nganh li:last-child {
+  margin-right: 0;
+}
+
+.menu-nganh a {
+  display: block;
+  width: 140px;
+  padding: 5px 0;
+  background-color: #00eeee;
+  color: #0000ee;
+  font-size: 26px;
+  text-align: center;
+  text-decoration: underline;
+}

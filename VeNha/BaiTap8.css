@@ -1,0 +1,122 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+#root {
+  width: 1024px;
+  max-width: calc(100% - 32px);
+  margin: 35px auto 0;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#site-header {
+  margin: 0 0 34px;
+  padding: 17px 12px;
+  background-color: #cecece;
+  background-image: url("imgs/logo.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 116px) center;
+  background-size: 50px auto;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-indent: 55px;
+  text-shadow: 2px 2px 1px #1f1f1f, -1px -1px 1px #1f1f1f;
+}
+
+.superheroes {
+  width: 88%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5%;
+}
+
+.superheroes li {
+  display: inline-block;
+  width: 19%;
+  flex: 0 0 auto;
+  position: relative;
+  transition: width 0.22s ease;
+}
+
+.hero-header {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 2px;
+  width: 100%;
+  color: #f4f4f4;
+  font-size: 17px;
+  text-align: center;
+  opacity: 0.55;
+  text-shadow: none;
+}
+
+.superheroes li img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+
+.superheroes li a {
+  display: none;
+  width: 100%;
+  padding: 9px 4px;
+  margin-top: 4px;
+  background: #6f6f6f;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.superheroes li:hover,
+.superheroes li:focus-within {
+  width: 21.5%;
+}
+
+.superheroes li:hover .hero-header,
+.superheroes li:focus-within .hero-header {
+    color: #fff;
+    opacity: 1;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.superheroes li:hover a,
+.superheroes li:focus-within a {
+  display: block;
+  text-decoration: underline;
+}
+
+.superheroes li a:focus-visible {
+  outline: 3px solid #1777e5;
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  #site-header { font-size: 25px; background-position: calc(50% - 98px) center; background-size: 42px auto; text-indent: 45px; }
+  .superheroes { width: 100%; flex-wrap: wrap; gap: 16px 1%; }
+  .superheroes li, .superheroes li:hover, .superheroes li:focus-within { width: 31%; }
+}
+
+@media (max-width: 430px) {
+  .superheroes li, .superheroes li:hover, .superheroes li:focus-within { width: 47%; }
+  .hero-header { font-size: 14px; }
+}

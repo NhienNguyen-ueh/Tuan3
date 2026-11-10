@@ -1,0 +1,72 @@
+.dai-hoc-ueh {
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.khoa-cnttd {
+  color: rgba(255, 0, 0, 0.5);
+  text-align: right;
+  font-style: italic;
+  border: 3px dotted yellow;
+  border-radius: 12px;
+  background-color: #d3d3d3;
+  font-size: 15px;
+  padding: 14px;
+}
+
+.bit-ueh {
+  display: inline-block;
+  max-width: 100%;
+  margin: 4px 0;
+  padding: 12px 18px;
+  background: radial-gradient(ellipse, #d9ec90 0%, #cde7a0 65%, #f1f8dc 100%);
+  color: #c3f36a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(32px, 8vw, 54px);
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1.25;
+  text-shadow:
+    1px 1px 0 #be2717,
+    2px 3px 0 #9b130e,
+    4px 5px 2px #b52214,
+    6px 7px 8px rgba(164, 21, 11, 0.85),
+    0 0 13px rgba(230, 99, 19, 0.72);
+}
+
+.nen-logo {
+  min-height: 180px;
+  border: 1px solid #d7dfdf;
+  background-color: #f8fbf9;
+  background-image: url("https://ueh.edu.vn/schools/college/images/logo/bit-header-logo.png");
+  background-repeat: repeat;
+  background-size: 30px auto;
+  background-attachment: fixed;
+}
+
+.doan-van {
+  width: 100px;
+  height: 50px;
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #7896b4;
+  background-color: #edf6ff;
+  font-size: 13px;
+}
+
+.an-noi-dung {
+  overflow: hidden;
+}
+
+.cat-ba-cham {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.khong-xuong-dong {
+  white-space: nowrap;
+  overflow: hidden;}
